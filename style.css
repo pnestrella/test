@@ -1,0 +1,208 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(243, 178, 239);
+    place-items: center;
+}
+
+.caption{
+    color:#444;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5px;
+}
+
+.caption span{
+    color:rgb(147, 26, 67);
+}
+
+.gif{
+    display: block;
+    margin: 0 auto;
+    height:300px;
+    width: 300px;
+    padding: 50px;
+    margin-bottom: -50px;
+    overflow: hidden;
+}
+
+#next{
+    color: #EC5578;
+    text-decoration: none;
+    text-align: center;
+    padding: 1px 1px;
+    margin: 5px 100px;
+}
+
+.custom-button {
+  background-color: #9ae8a3; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 25px; /* Font size */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #dadae3; /* Darker green background color */
+}
+
+
+.custom-button {
+    background-color: #EC5578; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around text */
+    border: 0px; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 25px; /* Font size */
+    font-family:fantasy ;
+    box-shadow: 5px 5px 5px -1px #4d011b,
+                -10px -10px 10px -1px #0000
+  }
+  
+  /* Hover effect */
+  .custom-button:hover {
+    background-color: #edecf4; /* Darker green background color */
+  }
+
+  #no{
+    background-color: #DE1363; /* Green background color */
+  }
+  #yes{
+    background-color: #EC5578;
+  }
+
+.popping-text p {
+    font-size: 36px;
+    color: #333; /* Change the color as needed */
+    animation: pop 0.5s ease-out forwards;
+    opacity: 0; /* Initially hide the text */
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0.5); /* Start with smaller size */
+      opacity: 0; /* Start with no opacity */
+    }
+    80% {
+      transform: scale(1.2); /* Pop to larger size */
+      opacity: 1; /* Fade in */
+    }
+    100% {
+      transform: scale(1); /* Return to original size */
+    }
+  }
+
+  #maacm{
+    color: #ff043b;
+  }
+  
+
+  .wrapper{
+    margin-left: 5px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius:40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  .valentiness {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+  .Envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: rgb(120, 9, 223);
+        display: grid;
+    place-items: center;
+    margin: 0 auto;
+  }
+  
+  .Envelope::before {
+    content: '';
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    background: rgb(120, 9, 223);
+    transform: rotate(45deg);
+    top: -105px;
+    left: 44px;
+  }
+  
+  .front {
+    position: absolute;
+    border-right: 180px solid rgb(136, 62, 205);
+    border-top: 95px solid transparent;
+    border-bottom: 100px solid transparent;
+    left: 120px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+  }
+
+  .front::before{
+    position: absolute;
+    content: '';
+    border-left: 300px solid rgb(165, 88, 237);
+    border-top: 195px solid transparent;
+    left: -120px;
+    top: -95px;
+  }
+
+  .card{
+    position: relative;
+    width: 250px;
+    height: 180px;
+    background: #fff;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    transition: 1s;
+  }
+  
+
+  .card::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #333;
+    border-style: dashed;
+  }
+
+  .valentiness:hover .card{
+    transform: translateY(-100px);
+  }
+
+  .card .text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    text-align: center;
+    line-height: 25px;
+    color: #333;
+  }
